@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API = '/api/tasks';
+const API = `${import.meta.env.VITE_API_BASE ?? ''}/api/tasks`;
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
